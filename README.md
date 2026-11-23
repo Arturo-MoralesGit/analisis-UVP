@@ -1,29 +1,29 @@
-# Welcome to your Lovable project
+# Conciliación UVP SICOM vs SAP
 
-This project was built with [Lovable](https://lovable.dev).
+Tablero web para cargar archivos de SAP y SICOM, conciliar ventas por agencia y tarifa, consultar el detalle de registros y exportar resultados a Excel. El procesamiento se realiza en el navegador.
 
-## Build with Lovable
+## Desarrollo local
 
-Open your project in the [Lovable editor](https://lovable.dev) and keep building.
-
-- **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: connect the project to GitHub and every change made in Lovable is committed straight to your repository.
-- **Full ownership**: this code is yours. Push to your repository and your changes sync back into Lovable, ready for your next prompt.
-
-## Development
-
-Prefer working locally? You need Node.js and npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
+Requiere Node.js 22 y npm.
 
 ```sh
-git clone <this-repository-url>
-cd <repository-name>
-npm i
+npm ci
 npm run dev
 ```
 
-## Built with
+Para validar la aplicación:
 
-- TanStack Start
-- TypeScript
-- React
-- Tailwind CSS
+```sh
+npm test
+npm run build
+```
+
+## Publicación en GitHub Pages
+
+El workflow de GitHub Actions en `.github/workflows/deploy-pages.yml` genera y publica la versión estática al hacer push a `main`.
+
+En el repositorio, abre **Settings → Pages** y selecciona **GitHub Actions** como *Build and deployment source*. El sitio se publica en:
+
+`https://arturo-moralesgit.github.io/analisis-UVP/`
+
+El build activa el prerender de la página principal y configura la base `/analisis-UVP/`, necesaria para los recursos y el enrutamiento en un sitio de proyecto de GitHub Pages.
