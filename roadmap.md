@@ -1,0 +1,12 @@
+# Ajustes de conciliación
+- [x] Aplicar CT 40/50 a importes SAP y probar ambos signos.
+- [x] Verificar acumulación SICOM de cancelaciones y reposiciones.
+- [x] Mostrar cuentas sin tarifa bajo el tablero.
+- [x] Usar nombres oficiales de agencias en pantalla y Excel.
+- [x] Probar carga y exportación.
+- [x] Corregir equivalencias SICOM: AB→APBT y AM→APMT.
+- [x] Aceptar archivos SICOM de texto sin extensión.
+- [x] Soportar columna TA en SICOM (01→tarifa 1) y probar con los 3 archivos de ejemplo.
+- [x] Detectar archivos de texto en UTF-16 (SAP y SICOM).
+- [x] Abrir registros de SAP/SICOM desde Usuarios por tarifa, agencia, zona y total.
+- [x] Validar filtros y consulta con archivos cargados.
